@@ -1,4 +1,5 @@
 import { homePage } from "./home";
+import { aboutPage } from "./about";
 import "./style.css";
 
 homePage.homeLoad("content");
@@ -14,5 +15,12 @@ const index = (function () {
     homeButton.addEventListener("click", () => {
         clearDiv();
         homePage.homeLoad("content");
+    })
+
+    const aboutButton = document.getElementById("about-btn");
+
+    aboutButton.addEventListener("click", () => {
+        clearDiv();
+        aboutPage.aboutLoad("content");
     })
 })();
