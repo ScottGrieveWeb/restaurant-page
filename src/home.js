@@ -1,7 +1,7 @@
 import restaurantImage from "./images/restaurant.jpg";
 
 export const homePage = (function () {
-    function pageLoad(id){
+    function homeLoad(id){
         const contentDiv = document.getElementById(id);
 
         const mainImage = document.createElement('img');
@@ -22,6 +22,6 @@ export const homePage = (function () {
     }
 
     return {
-        pageLoad
+        homeLoad
     };
 })();
