@@ -1,5 +1,6 @@
 import { homePage } from "./home";
 import { aboutPage } from "./about";
+import { menuPage } from "./menu";
 import "./style.css";
 
 homePage.homeLoad("content");
@@ -22,5 +23,11 @@ const index = (function () {
     aboutButton.addEventListener("click", () => {
         clearDiv();
         aboutPage.aboutLoad("content");
+    })
+
+    const menuButton = document.getElementById("menu-btn");
+    menuButton.addEventListener("click", () => {
+        clearDiv();
+        menuPage.menuLoad("content");
     })
 })();
