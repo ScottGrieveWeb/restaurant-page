@@ -1,4 +1,4 @@
-import restaurantImage from "./images/restaurant.jpg";
+import restaurantImage from "./images/background.jpg";
 
 export const aboutPage = (function (){
 
@@ -10,11 +10,11 @@ export const aboutPage = (function (){
         mainImage.setAttribute("id", "restaurant-img");
 
         const headLine = document.createElement('h1');
-        const headLineNode = document.createTextNode('About My Restaurant');
+        const headLineNode = document.createTextNode('About Us');
         headLine.appendChild(headLineNode);
 
         const para = document.createElement('p');
-        const paraText = document.createTextNode('We are a restaurant! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id metus sit amet justo convallis luctus. Donec lacinia erat sapien, eu bibendum sem pulvinar vel. Nunc sit amet tristique dolor, eget tincidunt enim. Curabitur ullamcorper sapien leo, eu auctor est tristique in.');
+        const paraText = document.createTextNode(`Himalayan Times Restaurant is located on 67-69 Church Street, Larkhall ML9 1EZ. We are for you and all you need to do is decide what you want to eat. We have all your favourite dishes such as European Dishes, Starters, House Specialties, Tandoori Mains and much more. Also, don't forget to provide your feedback.`);
         para.appendChild(paraText);
 
         contentDiv.appendChild(mainImage);
