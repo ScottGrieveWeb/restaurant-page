@@ -3,17 +3,17 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     height: 100px;
+    gap: 50px;
 }
 #logo {
-    height: auto;
-    width: 35%;
+    height: 100px;
+    width: auto;
 }
 #nav-wrapper {
     display: flex;
@@ -28,7 +28,6 @@ header {
 }
 .nav-btn:hover {
     border: solid 1px #A0874F;
-    /* transform: scale(1.2); */
     border-radius: 15px;
     background-color: rgba(160, 135, 79, 0.3);
 }
