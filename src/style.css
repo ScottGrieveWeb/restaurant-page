@@ -1,8 +1,37 @@
+body {
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#content p, h1, h2, h3 {
+    color: white;
 }
 #restaurant-img {
     width: 100%;
     height: auto;
-    
+    position: relative;
+    opacity: 0.4;
 }
+#image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+#content h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+

@@ -4,6 +4,9 @@ export const homePage = (function () {
     function homeLoad(id){
         const contentDiv = document.getElementById(id);
 
+        const imageWrapper = document.createElement('div');
+        imageWrapper.setAttribute("id", "image-wrapper");
+
         const mainImage = document.createElement('img');
         mainImage.src = restaurantImage;
         mainImage.setAttribute("id", "restaurant-img");
@@ -12,8 +15,9 @@ export const homePage = (function () {
         const headLineNode = document.createTextNode("Welcome to Himalayan Times");
         headLine.appendChild(headLineNode);
 
-        contentDiv.appendChild(mainImage);
-        contentDiv.appendChild(headLine);
+        imageWrapper.appendChild(mainImage);
+        imageWrapper.appendChild(headLine);
+        contentDiv.appendChild(imageWrapper);
     }
 
     return {
