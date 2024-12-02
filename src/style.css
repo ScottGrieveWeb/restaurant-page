@@ -1,10 +1,48 @@
 body {
     background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
+}
+#logo {
+    height: auto;
+    width: 35%;
+}
+#nav-wrapper {
+    display: flex;
+    height: 100%;
+}
+.nav-btn {
+    width: 80%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+.nav-btn:hover {
+    border: solid 1px #A0874F;
+    /* transform: scale(1.2); */
+    border-radius: 15px;
+    background-color: rgba(160, 135, 79, 0.3);
+}
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+}
+.nav-btn {
+    color: white;
 }
 #content {
     width: 100%;
